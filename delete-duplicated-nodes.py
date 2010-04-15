@@ -1,5 +1,14 @@
 # author : eocampos
-# license: GPL V2 or later --
+# license: GPL V2 or later
+# delete-duplicated-nodes.py:
+#   This script deletes all those duplicated nodes that contain the same 
+#   exact coordinate.
+#
+# DISCLAIMER: You have to understand that the final node that we store
+#   is the last one we encounter. If it happens that you have a node that
+#   belongs to a way, and a another node with the same coordinate
+#   representing, say, a traffic signal, we'll lose one of them (whichever
+#   appears first in the osm file). YOU HAVE BEEN WARNED.
 
 from lxml import etree
 from sys import argv, exit
