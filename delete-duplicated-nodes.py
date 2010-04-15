@@ -1,5 +1,5 @@
 # author : eocampos
-# license: GPL V2 or later.
+# license: GPL V2 or later
 
 from lxml import etree
 from sys import argv, exit
